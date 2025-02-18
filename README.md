@@ -20,7 +20,13 @@ Apro Test System is a Django-based application that allows users to register, lo
     cd apro-test-system
     ```
 
-2. Create a virtual environment and activate it:
+2. Extract the `apro_clone.zip` file:
+
+    ```sh
+    unzip apro_clone.zip -d apro-test-system
+    ```
+
+3. Create a virtual environment and activate it:
 
     ```sh
     python -m venv .venv
@@ -28,25 +34,25 @@ Apro Test System is a Django-based application that allows users to register, lo
     source .venv/bin/activate  # On macOS/Linux
     ```
 
-3. Install the required dependencies:
+4. Install the required dependencies:
 
     ```sh
     pip install -r requirements.txt
     ```
 
-4. Apply the database migrations:
+5. Apply the database migrations:
 
     ```sh
     python manage.py migrate
     ```
 
-5. Create a superuser:
+6. Create a superuser:
 
     ```sh
     python manage.py createsuperuser
     ```
 
-6. Run the development server:
+7. Run the development server:
 
     ```sh
     python manage.py runserver
@@ -91,7 +97,7 @@ Apro Test System is a Django-based application that allows users to register, lo
 2. Navigate to the teacher dashboard.
 3. Create and manage tests, questions, and choices.
 4. View test results for students.
- 
+
 ## Contributing
 
 Contributions are welcome! Please open an issue or submit a pull request if you have any improvements or bug fixes.
